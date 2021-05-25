@@ -1,0 +1,34 @@
+package controller;
+
+import java.io.File;
+import java.io.IOException;
+
+public class ArquivosController implements IArquivosController{
+	
+	
+	private String readDir(String path) throws IOException {
+		File diretorio = new File(path);
+		if(diretorio.exists() && diretorio.isDirectory()){
+			return "Diretório válido!";
+		}
+		else{
+			return "Diretório inválido";
+			
+		}
+	}
+
+	@Override
+	public void readFile(String path, String nome) throws IOException {
+
+		
+	}
+
+	@Override
+	public void openFile(String path, String nome) throws IOException {
+
+		
+	}
+	
+		
+
+}
